@@ -1,0 +1,13 @@
+<ion-card>
+  <ion-card-subtitle class="ion-margin">
+    <span style="color: #3880ff;">{{indexArticle+1}}. </span>
+    <span style="font-size:12px;">{{article.source.name}}</span>
+  </ion-card-subtitle>
+  <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
+    {{article.title}}
+  </ion-card-title>
+  <ion-img *ngIf="article.urlToImage" [src]="article.urlToImage"></ion-img>
+  <ion-card-content *ngIf="article.description">
+    <p>{{article.description}}</p>
+  </ion-card-content>
+</ion-card>
